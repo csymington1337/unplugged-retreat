@@ -137,12 +137,12 @@ a {
   text-decoration: none;
 }
  
-img {
- 
+img { 
+	width: 100%;
 }
  
 figure {
- 
+  margin: 0;
 }
  
 address {
@@ -176,6 +176,14 @@ header .content-wrapper {
   margin: 0;
 }
 
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 .header-divider {
   background-color: #3a3a3a;
   width: 100%;
@@ -207,6 +215,8 @@ header nav ul li {
 /* -- MOBILE STYLES - HOMEPAGE -- */
 
 .hero-section {
+  background: url('../img/hero-bg.jpg') center no-repeat #333;
+  background-size: cover;
   color: #e2e3ed;
   display: flex;
   justify-content: center;
@@ -255,6 +265,8 @@ input[type=button] {
 }
 
 .features {
+  background: url('../img/features-bg.jpg') center no-repeat #333;
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -583,6 +595,14 @@ footer .copyright {
     width: 49%;
   }
 
+  .reviews figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 49%;
+  }
+
   .reviews h3 {
     width: 75%;
     margin: 0;
@@ -674,6 +694,10 @@ footer .copyright {
     padding: 15px 0;
   }
 
+  header figure {
+    width: 25%;
+  }
+
   .content-wrapper {
     max-width: 960px;
   }
@@ -732,6 +756,14 @@ footer .copyright {
   
   .reviews article div {
     width: 42%;
+  }
+
+  .reviews figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 55%;
   }
 
   footer h4 {
